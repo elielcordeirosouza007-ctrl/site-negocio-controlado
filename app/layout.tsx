@@ -54,6 +54,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${manrope.variable} ${fraunces.variable} bg-background`}>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9499345610806722"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
